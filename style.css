@@ -1,0 +1,25 @@
+/*
+Fuentes
+Texto: sans serif
+Cabeceras: raleway
+
+Colores
+Location/Email/Call/Happy clients/Proyects (el azul oscuro): #050d18
+Azul claro: #149ddd
+Letra: #272829 salvo titulitos y eso
+Fondo testimonio: #f5f8fd
+El otro fondo es blanco blanco
+Celeste de arriba de testimonios, de las comillas: #c3e8fa
+*/
+
+.titulito {
+    color: red;
+}
+
+.hero {
+    background-image: url(./assets/hero-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
