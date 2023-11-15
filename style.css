@@ -10,10 +10,16 @@ Letra: #272829 salvo titulitos y eso
 Fondo testimonio: #f5f8fd
 El otro fondo es blanco blanco
 Celeste de arriba de testimonios, de las comillas: #c3e8fa
+La letra negrita, al menos en Facts, es azul oscuro, no negro.
 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 .titulito {
     color: red;
+}
+
+.negrita {
+    color: #050d18;
 }
 
 .hero {
