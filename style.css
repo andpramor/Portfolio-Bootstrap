@@ -13,7 +13,7 @@ Celeste de arriba de testimonios, de las comillas: #c3e8fa
 La letra negrita, al menos en Facts, es azul oscuro, no negro.
 */
 .titulito {
-    color: red;
+    color: #1f5297;
 }
 
 .negrita {
@@ -27,3 +27,51 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
     background-size: cover;
     height: 100vh;
 }
+
+.fondo {
+    background-color: #f5f8fd;
+}
+
+.pbRecta {
+    border-radius: 0%;
+}
+
+.pbBg {
+    background-color: #1d9ee0;
+}
+
+.textoDerecha {
+    float: right;
+    margin-right: 0%;
+}
+
+.circulito {
+    width: 1em;
+    height: 1em;
+    transform: translateX(
+        calc(-50% - 1.5px)
+    ); /*Sin el calc no puede coger ambas medidas y sin el 1.5px no se centra respecto al borde porque bootstrap pone el borde hacia fuera de la caja*/
+}
+
+.trazoCirculito {
+    stroke: #1f5297 !important;
+    stroke-width: 3px;
+}
+
+.tituloCirculitos {
+    padding-top: 0;
+    line-height: 1;
+}
+
+.columnaCirculitos {
+    border-color: #1f5297 !important;
+    padding-top: 0;
+}
+
+.azulClaro {
+    color: #149ddd;
+}
+
+/*BOLITA
+Meter la imagen en el mismo div donde está el texto, con position absolute-relative 0?
+*/
