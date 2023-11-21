@@ -72,6 +72,16 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
     color: #149ddd;
 }
 
-/*BOLITA
-Meter la imagen en el mismo div donde está el texto, con position absolute-relative 0?
-*/
+.botoneraPortfolio {
+    height: 2rem;
+}
+
+.btnPortfolio {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+.btnActivoPortfolio {
+    color: #149ddd;
+}
