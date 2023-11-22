@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
 .subrayado {
     border-color: #149ddd !important;
     width: 4em;
@@ -9,16 +11,45 @@
     position: fixed;
     height: 100vh;
 }
+
+.iconoMenu {
+    width: 2em;
+    height: 2em;
+    background-color: #212531;
+    font-size: x-large;
+}
+
+.iconoMenu:hover {
+    color: #149ddd;
+    background-color: white;
+}
+
+.iconoFacts {
+    width: 2em;
+    height: 2em;
+    font-size: x-large;
+    color: #149ddd;
+}
+
+.iconoServices {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: x-large;
+    background-color: #149ddd;
+    color: white;
+}
+.iconoContact {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: x-large;
+    background-color: #f5f8fd;
+    color: #149ddd;
+}
+
 .iconoResponsive {
     width: 4em;
     height: auto;
     background-color: #149ddd;
-}
-
-.iconoContact {
-    width: 4em;
-    height: auto;
-    /*color: #149ddd;*/
 }
 
 .titulito {
@@ -73,7 +104,7 @@
 }
 
 .azulClaro {
-    color: #149ddd;
+    color: #149ddd !important;
 }
 
 .botoneraPortfolio {
