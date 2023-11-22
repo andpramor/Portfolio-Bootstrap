@@ -12,6 +12,13 @@ El otro fondo es blanco blanco
 Celeste de arriba de testimonios, de las comillas: #c3e8fa
 La letra negrita, al menos en Facts, es azul oscuro, no negro.
 */
+.iconoResponsive {
+    width: 4em;
+    height: auto;
+    fill: white;
+    background-color: #149ddd;
+}
+
 .titulito {
     color: #1f5297;
 }
@@ -51,11 +58,6 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
     transform: translateX(
         calc(-50% - 1.5px)
     ); /*Sin el calc no puede coger ambas medidas y sin el 1.5px no se centra respecto al borde porque bootstrap pone el borde hacia fuera de la caja*/
-}
-
-.trazoCirculito {
-    stroke: #1f5297 !important;
-    stroke-width: 3px;
 }
 
 .tituloCirculitos {
