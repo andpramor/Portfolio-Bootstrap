@@ -15,8 +15,13 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
 .iconoResponsive {
     width: 4em;
     height: auto;
-    fill: white;
     background-color: #149ddd;
+}
+
+.iconoContact {
+    width: 4em;
+    height: auto;
+    /*color: #149ddd;*/
 }
 
 .titulito {
@@ -44,7 +49,7 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
 }
 
 .pbBg {
-    background-color: #1d9ee0;
+    background-color: #1d9ddd;
 }
 
 .textoDerecha {
