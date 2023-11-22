@@ -48,7 +48,7 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
     border-radius: 0%;
 }
 
-.pbBg {
+.fondoAzulClaro {
     background-color: #1d9ddd;
 }
 
@@ -89,6 +89,15 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
     color: black;
 }
 
-.btnActivoPortfolio {
-    color: #149ddd;
+.textFormulario {
+    resize: none;
+}
+
+.entrada {
+    border-radius: 0;
+}
+
+.btnForm:hover {
+    color: #149ddd !important;
+    border: 1px solid #149ddd;
 }
