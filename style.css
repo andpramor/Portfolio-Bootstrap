@@ -12,6 +12,13 @@ El otro fondo es blanco blanco
 Celeste de arriba de testimonios, de las comillas: #c3e8fa
 La letra negrita, al menos en Facts, es azul oscuro, no negro.
 */
+
+.menuPc {
+    color: white;
+    background-color: #050d18;
+    position: fixed;
+    height: 100vh;
+}
 .iconoResponsive {
     width: 4em;
     height: auto;
@@ -100,4 +107,13 @@ La letra negrita, al menos en Facts, es azul oscuro, no negro.
 .btnForm:hover {
     color: #149ddd !important;
     border: 1px solid #149ddd;
+}
+
+.footer {
+    background-color: #1f5297;
+}
+
+.iconoFooter {
+    width: 3em;
+    height: auto;
 }
