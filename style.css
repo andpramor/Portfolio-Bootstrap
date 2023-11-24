@@ -122,8 +122,12 @@
     resize: none;
 }
 
-.entrada {
+.entradaSinRedondeo {
     border-radius: 0;
+}
+
+.alturaMapa {
+    height: 40vh;
 }
 
 .btnForm:hover {
@@ -138,4 +142,19 @@
 .iconoFooter {
     width: 3em;
     height: auto;
+}
+
+#carousel {
+    height: 50vh;
+}
+
+.botonCarousel {
+    width: 1em !important;
+    height: 1em !important;
+    background-color: white !important;
+    border: 2px solid #149ddd !important;
+}
+
+.botonCarousel + .active {
+    background-color: #149ddd !important;
 }

@@ -424,7 +424,36 @@
                             voluptatem tempore, nulla temporibus</div>
                     </div>
                     <div class="col-12">
-
+                        <!-- AQUÍ EMPIEZA EL CAROUSEL DE TESTIMONIO -->
+                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                                    class="active botonCarousel rounded-circle" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row bg-warning">
+                                        <div class="col-12">Slide 1</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row bg-success">
+                                        <div class="col-12">Slide 2</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row bg-danger">
+                                        <div class="col-12">Slide 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- AQUÍ ACABA EL CAROUSEL DE TESTIMONIO -->
                     </div>
                 </div>
                 <!-- CONTACT -->
@@ -465,7 +494,7 @@
                                     <span class="azulClaro">+1 5589 55488</span> 55s
                                 </div>
                             </div>
-                            <iframe class="w-100"
+                            <iframe class="w-100 alturaMapa"
                                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12099.58137067993!2d-73.99914873573718!3d40.69830254232736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sa108%20adam%20street%20new%20york%20ny%20535022!5e0!3m2!1ses!2ses!4v1700644504116!5m2!1ses!2ses"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -476,19 +505,22 @@
                             <form action="" class="row needs-validation" novalidate>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="input1" class="form-label">Your name</label>
-                                    <input type="text" class="form-control entrada" id="input1" placeholder="">
+                                    <input type="text" class="form-control entradaSinRedondeo" id="input1"
+                                        placeholder="">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="input2" class="form-label">Your email</label>
-                                    <input type="email" class="form-control entrada" id="input2" placeholder="">
+                                    <input type="email" class="form-control entradaSinRedondeo" id="input2"
+                                        placeholder="">
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="input3" class="form-label">Subject</label>
-                                    <input type="text" class="form-control entrada" id="input3" placeholder="">
+                                    <input type="text" class="form-control entradaSinRedondeo" id="input3"
+                                        placeholder="">
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="input4" class="form-label">Message</label>
-                                    <textarea class="form-control textFormulario entrada" id="input4"
+                                    <textarea class="form-control textFormulario entradaSinRedondeo" id="input4"
                                         rows="5"></textarea>
                                 </div>
                                 <div class="col-12 text-center">
