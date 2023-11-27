@@ -17,35 +17,64 @@
 <body>
     <!-- navbar -->
     <!-- Home, About, Resume, Portfolio, Services, Contact-->
-    <div class="container-fluid">
-        <!-- NAVBAR -->
-        <!-- NAVBAR PC ICONOS A i Y DE AHÍ PARA ABAJO -->
-        <div class="row">
-            <div class="col-3 d-none d-xl-block menuPc pt-4 px-3">
-                <div class="w-100 d-flex justify-content-center pb-3">
-                    <img src="./assets/profile-img.jpeg" class="w-50 rounded-circle border border-5 border-secondary"
-                        alt="">
-                </div>
-                <h2 class="text-white text-center h4 fw-bold">Alex Smith</h2>
-                <div class="row justify-content-around px-5"><!-- socials -->
-                    <!-- twitter -->
-                    <i
-                        class="bi bi-twitter  rounded-circle iconoMenu d-flex align-items-center justify-content-center"></i>
-                    <!-- facebook -->
-                    <i
-                        class="fa-brands fa-facebook-f rounded-circle iconoMenu d-flex align-items-center justify-content-center"></i>
-                    <!-- instragram -->
-                    <i
-                        class="bi bi-instagram  rounded-circle iconoMenu d-flex align-items-center justify-content-center"></i>
-                    <!-- skype -->
-                    <i
-                        class="bi bi-skype  rounded-circle iconoMenu d-flex align-items-center justify-content-center"></i>
-                    <!-- linkedin -->
-                    <i
-                        class="fa-brands fa-linkedin-in rounded-circle iconoMenu d-flex align-items-center justify-content-center"></i>
-                </div>
+    <!-- MENÚ añadir scrollspy -->
+    <div class="fixed-top d-xl-none"> <!-- abrir menu -->
+        <button class="btn rounded-circle m-3 float-end iconoAbrirMenu text-white" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+    <div class="fixed-top d-xl-none"> <!-- cerrar menu -->
+        <button type="button" class="btn rounded-circle m-3 float-end iconoAbrirMenu text-white"
+            data-bs-dismiss="offcanvas" data-bs-target="#staticBackdrop" aria-label="Close">
+            <i class="bi bi-person"></i>
+        </button>
+    </div>
+    <div class="offcanvas offcanvas-start menuLateral" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-body overflow-hidden">
+            <div class="w-100 d-flex justify-content-center pb-3">
+                <img src="./assets/profile-img.jpeg" class="w-50 rounded-circle border border-5 border-secondary"
+                    alt="">
             </div>
+            <h2 class="text-white text-center h4 fw-bold mb-0">Alex Smith</h2>
+            <div class="row justify-content-around px-5 py-2"><!-- socials -->
+                <!-- twitter -->
+                <i
+                    class="bi bi-twitter rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                <!-- facebook -->
+                <i
+                    class="fa-brands fa-facebook-f rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                <!-- instragram -->
+                <i
+                    class="bi bi-instagram  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                <!-- skype -->
+                <i class="bi bi-skype  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                <!-- linkedin -->
+                <i
+                    class="fa-brands fa-linkedin-in rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+            </div>
+            <ul class="list-group" id="mi-scrollspy-target">
+                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#inicio"><i
+                            class="bi bi-house-door iconoMenu me-2"></i>Home</a></li>
+                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#about"><i
+                            class="bi bi-person iconoMenu me-2"></i>About</a></li>
+                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#resume"><i
+                            class="bi bi-file-earmark iconoMenu me-2"></i>Resume</a>
+                </li>
+                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                        href="#portfolio"><i class="bi bi-layout-text-sidebar-reverse iconoMenu me-2"></i>Portfolio</a>
+                </li>
+                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                        href="#services"><i class="bi bi-hdd-stack iconoMenu me-2"></i>Services</a></li>
+                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                        href="#contact"><i class="bi bi-envelope iconoMenu me-2"></i>Contact</a>
+                </li>
+            </ul>
         </div>
+    </div>
+
+    <div class="container-fluid">
         <!-- HOME -->
         <div class="row hero" id="inicio">
             <div class="col-12 align-self-center text-center text-white">
@@ -217,6 +246,16 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- Volver a inicio -->
+                <div class="text-end p-3 fixed-bottom d-xl-none">
+                    <a href="#inicio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up text-white fondoAzulClaro iconoFooter rounded-circle p-3"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+                        </svg>
+                    </a>
                 </div>
                 <!-- RESUME -->
                 <div class="row py-5 px-md-5 px-xl-3" id="resume">
@@ -534,16 +573,6 @@
                 </div>
                 <!-- FOOTER -->
                 <div class="row d-xl-none footer">
-                    <div class="col-12 text-end p-3">
-                        <a href="#inicio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor"
-                                class="bi bi-arrow-up text-white fondoAzulClaro iconoFooter rounded-circle p-3"
-                                viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

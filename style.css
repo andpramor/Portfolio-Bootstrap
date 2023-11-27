@@ -2,26 +2,48 @@
 
 /*Texto sans-serif, titulos raleway*/
 
+.iconoAbrirMenu {
+    color: white !important;
+    font-size: x-large;
+    background-color: #149ddd;
+}
+
+.iconoAbrirMenu:hover {
+    color: #149ddd !important;
+    background-color: white;
+}
+
+.cerrarMenu {
+    width: 100vw;
+}
+
+.linkMenu {
+    text-decoration: none;
+}
+
 .subrayado {
     border-color: #149ddd !important;
     width: 4em;
 }
 
-.menuPc {
+.menuLateral {
     color: white;
     background-color: #050d18;
-    position: fixed;
     height: 100vh;
 }
 
-.iconoMenu {
+.iconoSocial {
     width: 2em;
     height: 2em;
     background-color: #212531;
     font-size: x-large;
 }
 
-.iconoMenu:hover {
+.iconoMenu {
+    font-size: x-large;
+}
+
+.iconoSocial:hover {
     color: #149ddd;
     background-color: white;
 }
@@ -137,6 +159,7 @@
 
 .footer {
     background-color: #1f5297;
+    height: 5rem;
 }
 
 .iconoFooter {
@@ -157,4 +180,10 @@
 
 .botonCarousel + .active {
     background-color: #149ddd !important;
+}
+
+@media (min-width: 1200px) {
+    .menuLateral {
+        position: fixed;
+    }
 }
