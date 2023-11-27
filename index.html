@@ -16,23 +16,25 @@
 
 <body>
     <!-- navbar -->
-    <!-- Home, About, Resume, Portfolio, Services, Contact-->
-    <!-- MENÚ añadir scrollspy -->
-    <div class="fixed-top d-xl-none"> <!-- abrir menu -->
-        <button class="btn rounded-circle m-3 float-end iconoAbrirMenu text-white" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+    <!-- MENÚ < XL -->
+    <div class="fixed-top d-xl-none pt-3 pe-3"> <!-- abrir menu -->
+        <button id="btnAbrirMenu" class="btn d-block rounded-circle float-end iconoAbrirMenu text-white" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
+            onclick="visibleCierre()">
             <i class="bi bi-list"></i>
-        </button>
-    </div>
-    <div class="fixed-top d-xl-none"> <!-- cerrar menu -->
-        <button type="button" class="btn rounded-circle m-3 float-end iconoAbrirMenu text-white"
-            data-bs-dismiss="offcanvas" data-bs-target="#staticBackdrop" aria-label="Close">
-            <i class="bi bi-person"></i>
         </button>
     </div>
     <div class="offcanvas offcanvas-start menuLateral" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-body overflow-hidden">
+            <div class="cerrarMenu fixed-top mt-3 d-xl-none"> <!-- cerrar menu -->
+                <button type="button" id="btnCerrarMenu"
+                    class="btn d-none rounded-circle float-end iconoAbrirMenu text-white me-3"
+                    data-bs-dismiss="offcanvas" data-bs-target="#staticBackdrop" aria-label="Close"
+                    onclick="visibleApertura()">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
             <div class="w-100 d-flex justify-content-center pb-3">
                 <img src="./assets/profile-img.jpeg" class="w-50 rounded-circle border border-5 border-secondary"
                     alt="">
@@ -75,6 +77,51 @@
     </div>
 
     <div class="container-fluid">
+        <!-- MENÚ XL -->
+        <div class="row">
+            <div class="col-3 d-none d-xl-block fixed-top menuLateral pt-5">
+                <div class="w-100 d-flex justify-content-center pb-3">
+                    <img src="./assets/profile-img.jpeg" class="w-50 rounded-circle border border-5 border-secondary"
+                        alt="">
+                </div>
+                <h2 class="text-white text-center h4 fw-bold mb-0">Alex Smith</h2>
+                <div class="row justify-content-around px-5 py-2"><!-- socials -->
+                    <!-- twitter -->
+                    <i
+                        class="bi bi-twitter rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- facebook -->
+                    <i
+                        class="fa-brands fa-facebook-f rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- instragram -->
+                    <i
+                        class="bi bi-instagram  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- skype -->
+                    <i
+                        class="bi bi-skype  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- linkedin -->
+                    <i
+                        class="fa-brands fa-linkedin-in rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#inicio"><i class="bi bi-house-door iconoMenu me-2"></i>Home</a></li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#about"><i class="bi bi-person iconoMenu me-2"></i>About</a></li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#resume"><i class="bi bi-file-earmark iconoMenu me-2"></i>Resume</a>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#portfolio"><i
+                                class="bi bi-layout-text-sidebar-reverse iconoMenu me-2"></i>Portfolio</a>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#services"><i class="bi bi-hdd-stack iconoMenu me-2"></i>Services</a></li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#contact"><i class="bi bi-envelope iconoMenu me-2"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- HOME -->
         <div class="row hero" id="inicio">
             <div class="col-12 align-self-center text-center text-white">
@@ -247,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Volver a inicio -->
+                <!-- Volver a inicio --> <!-- sticky bottom funciona al revés de lo que queremos :( -->
                 <div class="text-end p-3 fixed-bottom d-xl-none">
                     <a href="#inicio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-up text-white fondoAzulClaro iconoFooter rounded-circle p-3"
@@ -397,7 +444,7 @@
                             vel,
                             voluptatem tempore, nulla temporibus</div>
                     </div>
-                    <div class="col-2 col-lg-1">
+                    <div class="col-2 col-lg-1 py-2">
                         <i
                             class="bi bi-briefcase rounded-circle iconoServices d-flex align-items-center justify-content-center"></i>
                     </div>
@@ -406,47 +453,47 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores harum iusto necessitatibus
                         minus accusantium
                     </div>
-                    <div class="col-2 col-lg-1">
+                    <div class="col-2 col-lg-1 py-2">
                         <i
                             class="bi bi-card-checklist rounded-circle iconoServices d-flex align-items-center justify-content-center"></i>
                     </div>
-                    <div class="col-10 col-md-4 col-lg-3 px-2">
+                    <div class="col-10 col-md-4 col-lg-3 p-2">
                         <h2 class="h4 fw-bold">Dolor Sitema</h2>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim ullam? Earum voluptatem
                         fugiat ex
                     </div>
-                    <div class="col-2 col-md-2 col-lg-1">
+                    <div class="col-2 col-md-2 col-lg-1 py-2">
                         <i
                             class="bi bi-bar-chart rounded-circle iconoServices d-flex align-items-center justify-content-center"></i>
                     </div>
-                    <div class="col-10 col-md-4 col-lg-3 px-2">
+                    <div class="col-10 col-md-4 col-lg-3 p-2">
                         <h2 class="h4 fw-bold">Sed up perspiciatis</h2>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore libero facere quod natus
                         nesciunt expedita
                     </div>
-                    <div class="col-2 col-md-2 col-lg-1">
+                    <div class="col-2 col-md-2 col-lg-1 py-2">
                         <i
                             class="bi bi-binoculars rounded-circle iconoServices d-flex align-items-center justify-content-center"></i>
                     </div>
-                    <div class="col-10 col-md-4 col-lg-3 px-2">
+                    <div class="col-10 col-md-4 col-lg-3 p-2">
                         <h2 class="h4 fw-bold">Magni Dolores</h2>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nesciunt ducimus doloremque
                         aliquid fugiat reiciendis
                     </div>
-                    <div class="col-2 col-md-2 col-lg-1">
+                    <div class="col-2 col-md-2 col-lg-1 py-2">
                         <i
                             class="bi bi-brightness-high rounded-circle iconoServices d-flex align-items-center justify-content-center"></i>
                     </div>
-                    <div class="col-10 col-md-4 col-lg-3 px-2">
+                    <div class="col-10 col-md-4 col-lg-3 p-2">
                         <h2 class="h4 fw-bold">Nemo Enim</h2>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et natus voluptates ratione illo totam
                         praesentium
                     </div>
-                    <div class="col-2 col-md-2 col-lg-1">
+                    <div class="col-2 col-md-2 col-lg-1 py-2">
                         <i
                             class="bi bi-calendar-week rounded-circle iconoServices d-flex align-items-center justify-content-center"></i>
                     </div>
-                    <div class="col-10 col-md-5 col-lg-3 px-2">
+                    <div class="col-10 col-md-4 col-lg-3 p-2">
                         <h2 class="h4 fw-bold">Eiusmod Tempor</h2>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolor ad nostrum unde vel
                         nesciunt
@@ -581,9 +628,12 @@
     <!--
 LO QUE FALTA:
         - TESTIMONIALS ENTERO.
-        - LA NAVBAR, CON SU X, APARECIENDO EL MENÚ DESDE LA IZQUIERDA Y BLOQUEANDO EL SCROLL EN < XL, CON SCROLL SPY PARA QUE APAREZCA CON UN FORMATO DIFERENTE EL ROW ACTIVO.
-        - SI DA TIEMPO, QUE EL ICONO DE VOLVER ARRIBA APAREZCA A MITAD DE SCROLL CON SCROLL SPY.
+        - SCROLL SPY.
+        - SI DA TIEMPO, QUE EL ICONO DE VOLVER ARRIBA APAREZCA A MITAD DE SCROLL.
     -->
+
+    <!-- script para cambiar la visibilidad de los botones del menú -->
+    <script src="./script.js"></script>
 
     <!-- JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
