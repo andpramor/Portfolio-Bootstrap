@@ -16,67 +16,70 @@
 
 <body>
     <!-- navbar -->
-    <!-- MENÚ < XL -->
-    <div class="fixed-top d-xl-none pt-3 pe-3"> <!-- abrir menu -->
-        <button id="btnAbrirMenu" class="btn d-block rounded-circle float-end iconoAbrirMenu text-white" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
-            onclick="visibleCierre()">
-            <i class="bi bi-list"></i>
-        </button>
-    </div>
-    <div class="offcanvas offcanvas-start menuLateral" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-body overflow-hidden">
-            <div class="cerrarMenu fixed-top mt-3 d-xl-none"> <!-- cerrar menu -->
-                <button type="button" id="btnCerrarMenu"
-                    class="btn d-none rounded-circle float-end iconoAbrirMenu text-white me-3"
-                    data-bs-dismiss="offcanvas" data-bs-target="#staticBackdrop" aria-label="Close"
-                    onclick="visibleApertura()">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-            <div class="w-100 d-flex justify-content-center pb-3">
-                <img src="./assets/profile-img.jpeg" class="w-50 rounded-circle border border-5 border-secondary"
-                    alt="">
-            </div>
-            <h2 class="text-white text-center h4 fw-bold mb-0">Alex Smith</h2>
-            <div class="row justify-content-around px-5 py-2"><!-- socials -->
-                <!-- twitter -->
-                <i
-                    class="bi bi-twitter rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
-                <!-- facebook -->
-                <i
-                    class="fa-brands fa-facebook-f rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
-                <!-- instragram -->
-                <i
-                    class="bi bi-instagram  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
-                <!-- skype -->
-                <i class="bi bi-skype  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
-                <!-- linkedin -->
-                <i
-                    class="fa-brands fa-linkedin-in rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#inicio"><i
-                            class="bi bi-house-door iconoMenu me-2"></i>Home</a></li>
-                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#about"><i
-                            class="bi bi-person iconoMenu me-2"></i>About</a></li>
-                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#resume"><i
-                            class="bi bi-file-earmark iconoMenu me-2"></i>Resume</a>
-                </li>
-                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
-                        href="#portfolio"><i class="bi bi-layout-text-sidebar-reverse iconoMenu me-2"></i>Portfolio</a>
-                </li>
-                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
-                        href="#services"><i class="bi bi-hdd-stack iconoMenu me-2"></i>Services</a></li>
-                <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
-                        href="#contact"><i class="bi bi-envelope iconoMenu me-2"></i>Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+
 
     <div class="container-fluid">
+        <!-- MENÚ < XL -->
+        <div class="fixed-top d-xl-none pt-3 pe-3"> <!-- abrir menu -->
+            <button id="btnAbrirMenu" class="btn d-block rounded-circle float-end iconoAbrirMenu text-white"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
+                onclick="visibleCierre()">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-start menuLateral" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-body overflow-hidden">
+                <div class="cerrarMenu fixed-top mt-3 d-xl-none"> <!-- cerrar menu -->
+                    <button type="button" id="btnCerrarMenu"
+                        class="btn d-none rounded-circle float-end iconoAbrirMenu text-white me-3"
+                        data-bs-dismiss="offcanvas" data-bs-target="#staticBackdrop" aria-label="Close"
+                        onclick="visibleApertura()">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="w-100 d-flex justify-content-center pb-3">
+                    <img src="./assets/profile-img.jpeg" class="w-50 rounded-circle border border-5 border-secondary"
+                        alt="">
+                </div>
+                <h2 class="text-white text-center h4 fw-bold mb-0">Alex Smith</h2>
+                <div class="row justify-content-around px-5 py-2"><!-- socials -->
+                    <!-- twitter -->
+                    <i
+                        class="bi bi-twitter rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- facebook -->
+                    <i
+                        class="fa-brands fa-facebook-f rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- instragram -->
+                    <i
+                        class="bi bi-instagram  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- skype -->
+                    <i
+                        class="bi bi-skype  rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                    <!-- linkedin -->
+                    <i
+                        class="fa-brands fa-linkedin-in rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#inicio"><i class="bi bi-house-door iconoMenu me-2"></i>Home</a></li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#about"><i class="bi bi-person iconoMenu me-2"></i>About</a></li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#resume"><i class="bi bi-file-earmark iconoMenu me-2"></i>Resume</a>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#portfolio"><i
+                                class="bi bi-layout-text-sidebar-reverse iconoMenu me-2"></i>Portfolio</a>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#services"><i class="bi bi-hdd-stack iconoMenu me-2"></i>Services</a></li>
+                    <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary"
+                            href="#contact"><i class="bi bi-envelope iconoMenu me-2"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- MENÚ XL -->
         <div class="row">
             <div class="col-3 d-none d-xl-block fixed-top menuLateral pt-5">
@@ -1070,9 +1073,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Testimonials: el primer botón no coge el fondo azul -->
-    <!-- Volver a inicio: sticky-bottom funciona al revés de lo que queremos :( -->
 
     <!-- script para cambiar la visibilidad de los botones del menú -->
     <script src="./script.js"></script>
