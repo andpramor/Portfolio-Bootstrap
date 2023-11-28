@@ -189,3 +189,18 @@
 .menuLateral li:hover .iconoMenu {
     color: #149ddd !important;
 }
+
+.comillas {
+    color: #c2e9fa;
+    font-size: x-large;
+}
+
+.testimonio {
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoTestimonio {
+    width: 8em;
+    height: 8em;
+}

@@ -56,7 +56,7 @@
                 <i
                     class="fa-brands fa-linkedin-in rounded-circle iconoSocial d-flex align-items-center justify-content-center"></i>
             </div>
-            <ul class="list-group" id="mi-scrollspy-target">
+            <ul class="list-group">
                 <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#inicio"><i
                             class="bi bi-house-door iconoMenu me-2"></i>Home</a></li>
                 <li class="list-group-item bg-transparent border-0"><a class="linkMenu text-secondary" href="#about"><i
@@ -130,7 +130,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-xl-9 offset-xl-3"> <!-- el offset para el hueco del menú en pc -->
+            <div class="col-12 col-xl-9 offset-xl-3">
                 <!-- ABOUT -->
                 <div class="row py-5 px-md-5 px-xl-3" id="about">
                     <div class="col-12 pt-3 pb-5">
@@ -294,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Volver a inicio --> <!-- sticky bottom funciona al revés de lo que queremos :( -->
+                <!-- Volver a inicio -->
                 <div class="text-end p-3 fixed-bottom d-xl-none">
                     <a href="#inicio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-up text-white fondoAzulClaro iconoFooter rounded-circle p-3"
@@ -499,7 +499,7 @@
                         nesciunt
                     </div>
                 </div>
-                <!-- TESTIMONIALS FALTA ENTERO-->
+                <!-- TESTIMONIALS -->
                 <div class="row py-5 px-md-5 px-xl-3 fondo" id="testimonials">
                     <div class="col-12 pb-5">
                         <h2 class="h1 fw-bold titulito">Testimonials</h2>
@@ -510,36 +510,482 @@
                             voluptatem tempore, nulla temporibus</div>
                     </div>
                     <div class="col-12">
-                        <!-- AQUÍ EMPIEZA EL CAROUSEL DE TESTIMONIO -->
-                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel pequeño -->
+                        <div id="carouselPeq" class="carousel slide d-block d-xl-none" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carouselPeq" data-bs-slide-to="0"
                                     class="active botonCarousel rounded-circle" aria-current="true"
                                     aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carouselPeq" data-bs-slide-to="1"
                                     class="botonCarousel rounded-circle" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carouselPeq" data-bs-slide-to="2"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselPeq" data-bs-slide-to="3"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselPeq" data-bs-slide-to="4"
                                     class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-inner">
+                            <div class="carousel-inner pb-3">
                                 <div class="carousel-item active">
-                                    <div class="row bg-warning">
-                                        <div class="col-12">Slide 1</div>
+                                    <div class="row">
+                                        <div class="col-12 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/0.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Patrick Rothfuss</p>
+                                                <p class="text-secondary pt-1 mt-0">Writter</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="row bg-success">
-                                        <div class="col-12">Slide 2</div>
+                                    <div class="row">
+                                        <div class="col-12 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/1.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Andrés Prado</p>
+                                                <p class="text-secondary pt-1 mt-0">Web Developer</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="row bg-danger">
-                                        <div class="col-12">Slide 3</div>
+                                    <div class="row">
+                                        <div class="col-12 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/2.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Piero Gabino</p>
+                                                <p class="text-secondary pt-1 mt-0">Entrepreneur</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/3.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">María Lao</p>
+                                                <p class="text-secondary pt-1 mt-0">Designer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-3">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/4.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Wednesday Addams</p>
+                                                <p class="text-secondary pt-1 mt-0">Happy Girl</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- AQUÍ ACABA EL CAROUSEL DE TESTIMONIO -->
+                        <!-- Carousel grande -->
+                        <div id="carouselGr" class="carousel slide d-none d-xl-block" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselGr" data-bs-slide-to="0"
+                                    class="active botonCarousel rounded-circle" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselGr" data-bs-slide-to="1"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselGr" data-bs-slide-to="2"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselGr" data-bs-slide-to="3"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselGr" data-bs-slide-to="4"
+                                    class="botonCarousel rounded-circle" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner pb-3">
+                                <div class="carousel-item active"> <!-- SLIDE 1 -->
+                                    <div class="row">
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/0.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Patrick Rothfuss</p>
+                                                <p class="text-secondary pt-1 mt-0">Writter</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/1.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Andrés Prado</p>
+                                                <p class="text-secondary pt-1 mt-0">Web Developer</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/2.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Piero Gabino</p>
+                                                <p class="text-secondary pt-1 mt-0">Entrepreneur</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"> <!-- SLIDE 2 -->
+                                    <div class="row">
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/3.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">María Lao</p>
+                                                <p class="text-secondary pt-1 mt-0">Designer</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/4.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Wednesday Addams</p>
+                                                <p class="text-secondary pt-1 mt-0">Happy Girl</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/1.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Andrés Prado</p>
+                                                <p class="text-secondary pt-1 mt-0">Web Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"> <!-- SLIDE 3 -->
+                                    <div class="row">
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/1.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Andrés Prado</p>
+                                                <p class="text-secondary pt-1 mt-0">Web Developer</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/0.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Patrick Rothfuss</p>
+                                                <p class="text-secondary pt-1 mt-0">Writter</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/2.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Piero Gabino</p>
+                                                <p class="text-secondary pt-1 mt-0">Entrepreneur</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"> <!-- SLIDE 4 -->
+                                    <div class="row">
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/3.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">María Lao</p>
+                                                <p class="text-secondary pt-1 mt-0">Designer</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/4.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Wednesday Addams</p>
+                                                <p class="text-secondary pt-1 mt-0">Happy Girl</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/1.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Andrés Prado</p>
+                                                <p class="text-secondary pt-1 mt-0">Web Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"> <!-- SLIDE 5 -->
+                                    <div class="row">
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/0.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Patrick Rothfuss</p>
+                                                <p class="text-secondary pt-1 mt-0">Writter</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/1.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Andrés Prado</p>
+                                                <p class="text-secondary pt-1 mt-0">Web Developer</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-3">
+                                            <div class="shadow p-3 bg-white">
+                                                <i class="fa-solid fa-quote-left comillas"></i><span class="px-1">Lorem
+                                                    ipsum dolor sit
+                                                    amet
+                                                    consectetur, adipisicing elit. Tempore, autem iure ea quia illum
+                                                    dolor
+                                                    sunt
+                                                    saepe, cumque, cum itaque omnis quos esse voluptas? Blanditiis esse
+                                                    error
+                                                    unde quia fugit</span><i
+                                                    class="fa-solid fa-quote-right comillas"></i>
+                                            </div>
+                                            <div class="py-3 d-flex testimonio">
+                                                <img src="./assets/testimonio/2.jpg"
+                                                    class="rounded-circle fotoTestimonio" alt="foto">
+                                                <p class="fw-bold pt-3 pb-1 mb-1">Piero Gabino</p>
+                                                <p class="text-secondary pt-1 mt-0">Entrepreneur</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- CONTACT -->
@@ -625,12 +1071,8 @@
         </div>
     </div>
 
-    <!--
-LO QUE FALTA:
-        - TESTIMONIALS ENTERO.
-        - SCROLL SPY.
-        - SI DA TIEMPO, QUE EL ICONO DE VOLVER ARRIBA APAREZCA A MITAD DE SCROLL.
-    -->
+    <!-- Testimonials: el primer botón no coge el fondo azul -->
+    <!-- Volver a inicio: sticky-bottom funciona al revés de lo que queremos :( -->
 
     <!-- script para cambiar la visibilidad de los botones del menú -->
     <script src="./script.js"></script>
