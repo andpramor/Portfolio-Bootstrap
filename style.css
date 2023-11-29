@@ -213,3 +213,9 @@ h4 {
     width: 8em;
     height: 8em;
 }
+
+@media (min-width: 1200px) {
+    .telefono {
+        color: #1f5297 !important;
+    }
+}
