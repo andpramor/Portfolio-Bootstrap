@@ -1,2 +1,2 @@
-A template for developers and desigers.
+A mockup portfolio for developers and designers, using Bootstrap 5 and custom CSS.
 <a href="https://andrespradomorgaz.com/Portfolio-Bootstrap">Live demo</a>
